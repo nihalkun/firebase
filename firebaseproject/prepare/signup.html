@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./app.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <title>Firebase Blog</title>
+  </head>
+  
+  <body>
+    
+
+    <main role="main">
+      <div class="container">
+        <div class="card m-4">
+          <div class="card-body">
+            <h2 class="pt-4">Sign Up</h2>
+            <div class="form-group">
+              <label for="Name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Username"
+                id="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+                id="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter Password"
+                id="password"
+              />
+            </div>
+            <input
+              onclick="signUp()"
+              type="submit"
+              value="SignUp"
+              class="btn btn-primary"
+              id="submitBtn"
+            />
+            <p></p>
+            <p>already have an account ? Sign In here</p>
+            <a href="signin.html"><button type="submit" class="btn btn-secondary">SignIn</button></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- /container -->
+    </main>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+    <script src="signIn.js"></script>
+
+  </body>
+</html>
